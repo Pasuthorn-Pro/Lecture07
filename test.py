@@ -36,7 +36,6 @@ def length_of_longest_substring_k_distinct(s: str, k: int) -> tuple:
 
     return max_length, max_substrings
 
-# ตัวอย่างการทดสอบฟังก์ชัน:
 s1 = "eceba"
 k1 = 2
 print(length_of_longest_substring_k_distinct(s1, k1))  # เอาต์พุต: (3, ['ece'])
