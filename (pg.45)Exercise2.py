@@ -28,8 +28,8 @@ print(f"{average_scores}")
 
 #Identify top performer in each department on average scores
 identify_top_performer = {}
-for department, employees in performance_data.items():
+for department, employees in average_scores.items():
     top_performer = max(employees, key=employees.get)
-    identify_top_performer[department] = top_performer
-
+    identify_top_performer[department] = (top_performer, employees[top_performer])
+    
 print(f"{identify_top_performer}")
